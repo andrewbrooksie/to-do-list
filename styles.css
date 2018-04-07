@@ -1,0 +1,150 @@
+body {
+  background: #edf0f1;
+  padding-top: 80px;
+}
+
+body,
+input,
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #25b99a;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+}
+
+header #input_header {
+  padding: 15px;
+}
+
+header input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  float: left;
+  color: #fff;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 0px;
+  padding-right: 60px;
+  text-indent: 20px;
+  box-shadow: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+header input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: .75;
+  /* Firefox */
+}
+
+header button {
+  cursor: pointer;
+  font-size: 30px;
+  color: #25b99a;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+  border-radius: 25px;
+  background: #fff;
+  border: 0px;
+  outline: none;
+  box-shadow: none;
+}
+
+header button:after {
+  content: '+';
+}
+
+ .todo { /* ul */
+  display: table;
+  padding: 0px;
+  width: 100%;
+  float: left;
+} 
+
+.todo li {
+  display: flex; 
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo li .item {
+  display: inline-block;
+  flex:6;
+  margin-right: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+  list-style-type: none;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.10);
+}
+
+.todo li .option_btns {
+  display: inline-block;  
+  flex: 1;
+  text-align: center;
+  min-width: 160px;
+}
+
+.todo li:last-of-type {
+  margin-bottom: 0px;
+}
+
+.todo li span{
+  display: inline-block;  
+  vertical-align: middle;  
+}
+
+.delete_item:after{
+  content: "✖";
+}
+
+.edit_item:after{
+  content: "✎";
+}
+
+.complete_item:after{
+  content: "✔";
+}
+
+.complete_item, .delete_item, .edit_item{
+  position:relative;
+  border:none;
+  cursor:pointer;
+  width:50px;
+  height:50px;
+  border-radius: 25px;
+  box-shadow:none;
+  outline:none;
+  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
